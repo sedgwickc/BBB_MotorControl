@@ -3,9 +3,9 @@ CFLAGS=
 DEBUG=-Wall -g -DDEBUG
 LINKER= -lmraa
 
-all: MC_Test
+all: sub_drive
 
-MC_Test:
+sub_drive:
 	$(GPP) $(CFLAGS) MotorControl_test.cpp MotorControl.cpp -o MotorControl_test $(LINKER)
 
 debug:
