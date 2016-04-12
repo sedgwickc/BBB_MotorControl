@@ -16,6 +16,11 @@ using namespace rover;
 int main() {
 	
 	MotorControl* mc = new MotorControl(NULL,NULL);
+	mc->forward();
+	sleep(5);
+	mc->stop();
+	sleep(5);
+	mc->clean_up();
 	
 	return 0;
 }

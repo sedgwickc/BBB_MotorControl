@@ -48,10 +48,10 @@ public:
     virtual ~MotorControl();
 private:
 	int curr_speed;
-	mraa::Gpio* pins_front[PIN_COUNT];
-	mraa::Gpio* pins_rear[PIN_COUNT];
-	mraa::Result res_front[PIN_COUNT];
-	mraa::Result res_rear[PIN_COUNT];
+	mraa::Gpio* pins_right[PIN_COUNT];
+	mraa::Gpio* pins_left[PIN_COUNT];
+	mraa::Result res_right[PIN_COUNT];
+	mraa::Result res_left[PIN_COUNT];
 };
 
 } // rover namespace
